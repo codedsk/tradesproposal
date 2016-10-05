@@ -1,0 +1,107 @@
+Slide 1 - Title Slide
+
+
+Hello and welcome to the TRADES presentation. My name is Derrick Kearney and I’d like to briefly introduce you to some of the features available on the HUBzero Platform that help people to perform research and collaboratively with others through the creation, use and publishing of software simulation tools.
+
+
+Slide 2 - Image of HUBzero Platform showing web browser, website, db, execution hosts, grid resources.
+
+
+The HUBzero Platform is a unique web infrastructure that gives users access to containerized Linux environments and national supercomputing resources. Using this infrastructure, users have developed and published hundreds of simulation tools and deployed additional software inside of the Linux containers. One of the popular simulation tools available on the HUB is an application called CNTBands.
+
+
+Slide 3 - Image of CNTBands. Right side of slide, flash a display of the application graph
+
+
+On the surface this application looks pretty simple, but I’d like to tell you the story behind how this and other applications like it have come to be published and deployed on the HUB for others to use because it’s a good demonstration of the features the platform provides. And in particular, we’ll be focusing on the development environment that allows users to access shared development tools, grid computing resources, and work collaboratively to perform research.
+
+
+Slide 4 - bobble heads for people, show jing, then show mp, show mp’s papers
+
+
+Many times, developers come to a HUBzero based website to collaborate with others as they build a simulation tool. In the case of the CNTBands application, the main developer was a graduate student, Jing Guo, who was utilizing algorithms from a paper written by M.P. Anantram et al out at NASA Ames Laboratory.  Jing wanted to be able to share his simulation application with others, so he first registered the code on one of our HUBs.
+
+
+Slide 5 - Tool registration form
+
+
+By registering his application on the HUB, Jing allocated his own development space on web. With registration, Jing got a source code repository, where he could store different versions of his software, a wiki page where he could disseminate information about his application, and received a place where he could deploy his application when he was ready to publish it for the world to use. He also got access to the workspace.
+
+
+Slide 6 - What is a workspace.
+
+
+A workspace is a Linux container based development environment where he could build his application, using standard development tools like compilers, debuggers, and interpreters. There are also graphical IDEs like RStudio, OCTAVE, and MATLAB in some cases. But, because of its nature, any tool with a graphical user interface that runs under Linux can be installed in the workspace and made available for users of the system to access either in the workspace, or published as its own application accessible through the HUB website from the user’s browser.
+
+
+Slide 7 - CNTBands graph, highlight DOS and E(k) paths
+
+
+Getting back to the CNTBands application, with access to a source code repository and the workspace, Jing was able to upload his initial version of the application into the source code repository, access the workspace environment and try out his code. He initially developed two modules.
+
+
+<maybe>
+
+Slide 8 - Collaboration, Groups
+
+
+The DOS & Band Gap code was based off of work from M.P. Anantram of NASA Ames Lab. In the process of reproducing these algorithms, he ended up working with other members of his research group and received guidance from M.P. Anantram. To help manage this collaboration Jing used another feature of the HUB, groups. With HUB Groups, a developer can create a place to share files, project notes, and data. 
+</maybe>
+
+
+Slide 9 - CNTBands graph, highlight DOS and E(k) paths, checks next to them to signal completion
+
+
+After he had those working in the workspace, he saved his code to the source code repository and had the application installed (or staged) so other people in his research group could go onto the HUB and easily access the application to try it out. When everything was working properly, he published the tool for the world to start using.
+
+
+Slide 10 - Tool information page
+
+
+On the HUB, tools can be published so that they are accessible to everyone in the world or their access can be restricted. Published tool run in the same Linux containers that the Workspace uses. So if the tool works when run in the workspace environment, it should also work when it is published.
+
+
+From the tool information page, users can launch the published tool. When it was published, CNTBands was a popular application because of the type of calculations that it did. It helped users simulate the characteristics of different types of carbon nanotubes and allowed users to visualize the output without needing to take csv files of data to an outside plotting application. The application really ignited the community. Because the application was published on the HUB, they could easily use it without needing to install extra software on their computer and maybe most importantly, users could communicate with each other, through the questions and answers feature on the HUB, and communicate with the application developers, through wishes, about features they would like to see.
+
+
+Slide 11 - wish for visualizing the nanotube. CNTBands Graph highlight maketube and molvis output.
+
+
+This type of interaction leads to new feature development. For example, in the case of CNTBands, users could have provided feedback that they wanted to see a picture of the nanotube that they were simulating. The developer can then incorporate that feedback into the next version of their tool, commit the new code to the repository, get the tool installed, test it out, and publish the new version.
+
+
+Slide 12 - onboarding new developers, adding them to the group, sharing workspaces
+
+Circle around new grad students, arrow toward the Group, arrow toward the Tool, arrow toward shared workspaces.
+
+
+It is equally as easy to get new members of the team up to speed with the project. For example, with CNTBands, eventually Jing Guo left the group and became a Professor at University of Florida. New grad students joined the research group and wanted to extend the tool to handle Graphene NanoRibbons. They didn’t have to start from scratch. They could be added to the collaboration group Jing originally created to get access to notes and papers. They could also be added as developers on the tool so they had permissions to make changes to the source code. And lastly, they could share workspaces with each other or even Jing, down in Florida, so if they ran into a problem, they didn’t have to use hand waving actions to describe the problem. They could actually look at the error messages or output being produced by the application running in each other’s workspace. This is a very powerful collaboration feature!
+
+
+Slide 13 - 3 more workspace features: Pegasus, UQ, Submit
+
+3 panel slide to introduce topics. Use as template for next 3 slides which highlight each feature.
+
+
+So, whats next for the CNTBands tool? I want to introduce you to three more features that are available inside of the workspace that help researchers perform computations more efficiently. These are Pegasus for building Workflows, UQ for Uncertainty Quantification, and Submit for accessing supercomputing resources.
+
+
+Slide 14 - Pegasus
+
+
+Inside the workspace, developers can build their own workflows by using the Pegasus Workflow Management System. With Pegasus, developers describe their workflow as a directed acyclic graph, where the nodes of the graph are the tasks to be complete or programs to run and the edges represent input and output data for the task. These workflows can be run in the workspace environment or can be run on supercomputing resources.
+
+
+Earlier we saw that the CNTBands program was really a bunch of smaller codes that took values or files as inputs and outputted more values or files. This is a great example of an application that can be made into a Pegasus workflow. We can turn each task into its own small application. This has two benefits. First, because each task is an application in its own right, we can create a service out of the application, and make that service available to people who want to interact with the HUB through web service requests. They request that a calculation be performed, and we return the answer. Second, if we wrap the applications using a library like Rappture, we can use a standard data interchange format and make reusable blocks that can fit into multiple workflows without constantly copying and pasting code.
+
+
+Slide 15 - UQ
+
+
+The workspace is also setup to allow developers to run experiments using the UQ or Uncertainty Quantification library. Under the hood, it is using Submit to run hundreds of jobs and provide the developer with a model that characterises the uncertainty of a variable in their simulation.
+
+
+Slide 16 - Submit
+
+
+Submit allows developers to easily run computations using supercomputing resources. Once the HUB is setup to talk to a resource like OpenScienceGrid, developers can use Submit to run parallel computations or perform sweeps of variable. 
