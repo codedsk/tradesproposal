@@ -1,6 +1,7 @@
 Slide 1 - Title Slide
 
-Hello and welcome to the TRADES presentation. My name is Derrick Kearney and I work for the HUBzero.org,
+Hello and welcome to the demo of HUBzero capabilities for the TRADES program.
+My name is Derrick Kearney and I work for HUBzero.org,
 
 
 
@@ -8,7 +9,7 @@ Slide 2 - Image of HUBzero Platform showing web browser, website, db, execution 
 
 a platform that enables developers and researchers to work collaboratively to perform research and build software in secure, scalable, sharable desktop-like environments.
 
-In order to explore some of the prominent features of the HUB in our short time together, let's look at a faily popular application named CNTbands, and explore the experience of the researchers who built the it and the users who do research with it on the HUB.
+In order to explore some of the prominent features of the HUB in our short time together, we will take a look at a faily popular application named CNTbands, and explore the experience of the researchers who built it and the users who do research with it on the HUB.
 
 
 
@@ -22,7 +23,7 @@ On the surface this application looks pretty simple,
 
 Slide 4 - CNTbands with application graph
 
-but under the hood, there is a lot going on. And it came from years of research, developement, collaboration, and interaction with users, and the HUB is in the middle of all of these interactions. If you're a researcher, you're familiar with this story. It's the story of how research happens, and as the name suggests, the HUB is where all of these interactions happen.
+but under the hood, there is a lot going on. And it came from years of research, developement, collaboration between developers, and interaction with users, and the HUB is in the middle of all of these interactions. If you're a researcher, you're familiar with this story. It's the story of how research happens, and as the name suggests, the HUB is where all of these interactions happen.
 
 Today we’ll be focusing on the development environment that allows users to access shared development tools, grid computing resources, and work collaboratively to perform research.
 
@@ -30,7 +31,7 @@ Today we’ll be focusing on the development environment that allows users to ac
 
 Slide 5 - story starts in 1990s with MP Anantram
 
-the idea started in the early 90s,  where a researcher, M.P. Anantram, was studying nanoscale structures and their applications in electrical engineering. He was building models using MATLAB.
+the beginnings of this application started in the early 90s, with a researcher, M.P. Anantram, was studying nanoscale structures and their applications in electrical engineering. He was building models using MATLAB.
 
 
 
@@ -38,7 +39,7 @@ Slide 6 - 2002 , Jing Guo picks up the work
 
 In the mid 90s, M.P. Anantram joined NASA where he continued to research and publish papers regarding nanoscale structure.
 
-Fast forward to 2002, a new researcher, Jing Guo is interested in building models for Carbon Nanotubes. So he starts digging up the old work from M.P. Anantram and collecting papers.
+Fast forward to 2002, a new researcher, Jing Guo was interested in building models for Carbon Nanotubes. So he starts digging up the old work from M.P. Anantram and collecting papers.
 
 As he is building his models, Jing wants to start working more closely with M.P. Anantram, sharing the models, but the de-facto way of sharing is emailing files back and forth, is painful and time consuming for everyone involved.
 
@@ -55,20 +56,17 @@ Jing registered his application on the HUB and immediately got access to:
 3. a place to publish his tool in the future.
 4. access to the HUB workspaces.
 
-what do you want to tell the people?
-These people wanted to collaborate, share their research, so they used the hub to do that.
-the hub makes it easy to collaborate
-the research didnt die, because he was able to collaborate using the hub.
-
 
 
 Slide 8 - What is a workspace.
 
-Researchers are able already used to the working on a desktop.
+I want to take a minute to explain the concept of a workspace.
 
-We give them all of the features of a desktop in a persistant environment that stays running, even when they turn their own computer off.  This isn't shelling into some terminal, although you can do that too. The HUB Workspaces give you a full graphical interface that lets you run all the tools you can run now on your desktop. Plus, you can build or download others from around the globe.
+Researchers are already used to the working on a desktop.
 
-We pack the workspaces with standard development tools like compilers, debuggers, and interpreters for languages like C, C++, Fortran, and Java. There are also graphical IDEs like RStudio, OCTAVE, and MATLAB. But, because of its nature, any tool with a graphical user interface that runs under Linux and soon Microsoft Windows, can be installed in the workspace and made available for users of the system to access either in the workspace, or published as its own application accessible through the HUB website from the user’s browser.
+We give them all of the features of a desktop in a persistant environment that stays running, even when they turn their own computer off.  We call this environment a workspace. This isn't just shelling into some terminal, although you can do that too. The HUB Workspaces give you a full graphical interface that lets you run all the tools you can run now on your desktop. Plus, you can download or build other software, if you want.
+
+We pack the workspaces with standard development tools like compilers, debuggers, and interpreters for languages like C, C++, Fortran, and Java. There are also graphical IDEs like RStudio, OCTAVE, and MATLAB. But, because of its nature, any tool with a graphical user interface that runs under Linux and soon Microsoft Windows, can be installed in the workspace and made available for users of the system to access either in the workspace, or as a published application, through their browser.
 
 The workspace also provide access to shared grid computing resources like Open Science Grid and XSEDE.
 
@@ -80,17 +78,13 @@ Another thing Jing did was create a Group on the HUB.
 
 This gave him space where he could upload and share the papers, files, project notes and data he was using as a part of his research.
 
-With the groups Jing could invite other developers or people who are interested in his science, and engage with that community on the HUB.
-
-
-collabed by adding people to groups.
-pic of map, jing reseaches out to different researchers to try the tool. map iwth lines from different parts of us or world.
+With the group, Jing could invite other developers or people who are interested in his science, and engage with that community on the HUB.
 
 
 
 Slide 10 - CNTBands graph, highlight DOS and E(k) paths
 
-After working with members of his research group, and collaborating with others from around the world, Jing was able to put together a first version of his application to model carbon nanotubes. It had a graphical user interface that made it easy to use and it visualized the output and made comparing of output across many runs simple.
+After working with members of his research group, and collaborating with others from around the world, Jing was able to put together a first version of his application to model carbon nanotubes. It had a graphical user interface that made it easy to use, and it visualized the output and made comparing of output across many runs simple.
 
 He put all his code in the source code repository and requested his application be installed for others to use.
 
@@ -98,9 +92,9 @@ He put all his code in the source code repository and requested his application 
 
 Slide 11 - Installing Applications.
 
-Once the application was installed, other members of his development team could try out the application and provide him feedback before he released it to the public. The processes for them to try the application was as easy as pushing the "launch tool" button. After pushing the button, the application was running inside of the user's web browser.
+Once the application was installed, other members of his development team could try out the application and provide him feedback before he released it to the public. The process for them to try the application was as easy as pushing the "launch tool" button. After pushing the button, the application was running inside of their web browser.
 
-They didn't need to download any code, or compile the sources, or deal with compiler errors, or license problems. It just worked. And that is key when it comes to collaborating, you want to reduce the barriers to getting work done. That is what the HUB is all about.
+They didn't need to download any code, or compile the sources, or deal with compiler errors, or license problems. It just worked. And that's key when it comes to collaborating, you want to reduce the barriers to getting work done. That's what the HUB is all about.
 
 
 
@@ -113,25 +107,29 @@ When everything was working properly, he published the tool for the world to sta
 Slide 13 - knowing your impact
 
 When tools are published on the HUB, they also get a tool information page that the tool author can modify.
-This is the web page the world accesses when they come to use the application on the HUB.
-It gives information about the application, its funding and its authors.
+This is the web page the world accesses when they want to use the application on the HUB.
+At the top, it gives information about the application, its funding and its authors.
 
 It also provides developers a way to know what kind of impact their application is having on the world.
 
 
 Slide 14 - Communicate with users
 
-On the side of the page, the HUB keeps metrics on how many unique users have run the application, how many times it has been cited by other researchers, what questions the users are asking about the application and new features the users are requesting.
+On the side of the page, the HUB keeps metrics on
+1. how many unique users have run the application,
+2. what questions the users are asking about the application and
+3. new features the users are requesting.
 
-This type of feedback from users in invaluable and you can't get it from doing the typical stuff like posting your code in a zip file on a website. The HUB provides this for the developers and users automatically. The HUB helps build community around science and research, and enables science to happen.
+This type of feedback from users is invaluable and you can't get it from doing the typical stuff like posting your code in a zip file on a website. The HUB provides this for the developers and users automatically. And its part of how the HUB helps build community around science and research, and enables science to happen.
 
-People can request a feature be added, for example, in CNTbands, users may have said that they liked the Density of States and Band Gap plots that were being provided, but they wanted to see what the carbon nanotube looked like.
+People can request a feature by creating a new wish.
+For example, in the case of CNTbands, users may have said that they liked the Density of States and Band Gap plots that were being provided, but they wanted to see what the carbon nanotube they were simulating looked like.
 
 
 
 Slide 15 - wish for visualizing the nanotube. CNTBands Graph highlight maketube and molvis output.
 
-The developers can recieve this feedback, adjust their code to add the feature, and quickly install and publish the new version of the application. In this case, they took advantage of the visualization servers available inside the workspace environment to create an interactive view of the carbon nanotube.
+The developers can recieve this feedback, adjust their code to add the feature, and quickly install and publish the new version of the application. In this case, they took advantage of the visualization servers available inside the workspace environment, to create an interactive view of the carbon nanotube.
 
 
 
@@ -140,13 +138,14 @@ Slide 16 - new developers
 Adding new developers to the team and getting them up to speed is equally as easy.
 Remember when Jing registered his application on the HUB and created the Group on the HUB?
 He also has the ability to add new people to these teams. So as he moves to another job, the research doesn't end or die.
+It can contiue to grow.
 
 
 
 Slide 17 - share a workspace
 
 Researchers don't need to be in the same place, at the same time, to collaborate.
-They can move around, change jobs, and still connect with each other by sharing workspace with each other
+They can move around, change jobs, and still connect with each other by sharing workspaces.
 
 So when the new researchers have problems, they can start up a workspace, launch their application in the workspace,
 
@@ -160,13 +159,13 @@ and share the workspace with other researchers to talk about problems they might
 
 Slide 19 - share a workspace
 
-They can collaborate within the workspace! This is a powerful feature because it is often easier to show someone a problem, than to try to describe it and have them try to reproduce it.
+This means that they can collaborate within the workspace! And that's a powerful feature because its often easier to show someone a problem, than to try to describe it and have them try to reproduce it.
 
 
 
 Slide 20 - Productivity in the workspace
 
-There are three more features I want to show you quickly. The first one is Submit.
+There are three more features I want to show you quickly and they all have to do with different ways of running applications within the workspace. They are Submit, Pegasus Workflows, and Uncertainty Quanitification. The first one is Submit.
 
 
 
@@ -174,17 +173,23 @@ Slide 21 - Run tools locally
 
 Inside the workspace, users can run programs by using a terminal. The workspaces are pretty powerful by themselves. But sometimes you need more cores or more RAM to run parallel jobs.
 
+Submit allows researchers to easily run their programs on grid computing resources like XSEDE and OpenScience Grid.
+
+
 
 Slide 22 - Submit jobs to othe grid
 
-Submit allows researchers to easily run their programs on grid computing resources like XSEDE and OpenScience Grid. In most cases it is as easy as prepending the word "submit" to your command. This lets the submit program handle sending your job to the supercomputers.
+In most cases it is as easy as prepending the word "submit" to your command. This lets the submit program handle sending your job to the supercomputers.
 
 
 
 Slide 23 - Submit workflows
 
 If you run a simulation for one value, you probably want to run it for a few other values to see how the result changes.
-With the submit command, researchers can perform sweeps of input variables by adding a little syntax to the command. In the background, submit creates something called a workflow and can send the jobs to be run on a supercomputer in parallel.
+
+With the submit command, researchers can perform sweeps of input variables by adding a little syntax to their command. In this example we want to perform our calculation, sweeping the Vin variable from 1-5 volts.
+
+In the background, submit creates something called a workflow, and sends 5 jobs to be run on a supercomputer in parallel.
 
 
 
@@ -192,29 +197,38 @@ Slide 24 - Your own workflow
 
 If you want to, you can even build your own workflow within the Workspaces.
 Remember that cntbands tool we were talking about earlier?
-It was a good candidate for being run as a workflow, so we built a version of the tool that used a program called pegasus to manage the workflow.
+It was a good candidate for being run as a workflow. When it was originally being developed, the authors didn't envision it would be a workflow. But over time, as more features were added, it evolved into one.
+So we built a version of the tool that used a program called Pegasus to manage it as a the workflow. This can be done with any application where the pieces are independent programs in their own right.
+
+
 
 Slide 25 - Pegasus Workflow
 
-Inside the workspaces, we have Pegasus installed.
+Speaking of Pegasus, we have it installed inside the workspaces as well.
 
 
 Slide 26 - Pegasus
 
-Pegasus is a program that enables researchers to build scientific workflows. It is developed by a team out at USC under the NSF funded SDCI grant. We leverage this tool inside the workspace and it makes developing and debugging scientific workflows easy. 
+Pegasus is a program that enables researchers to build scientific workflows. It is developed by a team out at USC, funded by an NSF grant. We leverage this tool inside the workspace and it makes developing and debugging scientific workflows easy.
 
 
 
 Slide 27 UQ
 
-we have tools that allow users to do parameter sensitivity analysis.
-useful in all kinds of scientific computation.
+The workspaces also have tools that allow users to do parameter sensitivity analysis, which is useful in all kinds of scientific computation.
 
 
-The workspace is also setup to allow developers to run experiments using the UQ or Uncertainty Quantification library. Under the hood, it is using Submit to run hundreds of jobs and provide the developer with a model that characterises the uncertainty of a variable in their simulation.
+
+Slide 28 UQ
+If we consider our inputs to a simulation as having a distribution, then the outputs of our simulation will also have a distibution and we can use those distributions to explore the effects of changing a parameter.
+
+For example, we can see how the properties of a material changes.
+
+Under the hood it uses submit and allows researchers to run hundreds of parallel jobs to help characterize properties of parameters.
 
 
-Slide 28 - conclusion
+
+Slide 29 - conclusion
 
 conclusion
 these are things we already have.
