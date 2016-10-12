@@ -113,7 +113,14 @@ At the top, it gives information about the application, its funding and its auth
 It also provides developers a way to know what kind of impact their application is having on the world.
 
 
-Slide 14 - Communicate with users
+
+Slide 14 - Track Usage Metrics
+
+Further down the page, in the usage tab, there are additional metrics showing what parts of the world users are coming from, how they identify, whether they come from an educational organization or industry, and also the wall clock or cpu time that the application consumes.
+
+
+
+Slide 15 - Communicate with users
 
 On the side of the page, the HUB keeps metrics on
 1. how many unique users have run the application,
@@ -127,13 +134,13 @@ For example, in the case of CNTbands, users may have said that they liked the De
 
 
 
-Slide 15 - wish for visualizing the nanotube. CNTBands Graph highlight maketube and molvis output.
+Slide 16 - wish for visualizing the nanotube. CNTBands Graph highlight maketube and molvis output.
 
 The developers can recieve this feedback, adjust their code to add the feature, and quickly install and publish the new version of the application. In this case, they took advantage of the visualization servers available inside the workspace environment, to create an interactive view of the carbon nanotube.
 
 
 
-Slide 16 - new developers
+Slide 17 - new developers
 
 Adding new developers to the team and getting them up to speed is equally as easy.
 Remember when Jing registered his application on the HUB and created the Group on the HUB?
@@ -142,7 +149,7 @@ It can contiue to grow.
 
 
 
-Slide 17 - share a workspace
+Slide 18 - share a workspace
 
 Researchers don't need to be in the same place, at the same time, to collaborate.
 They can move around, change jobs, and still connect with each other by sharing workspaces.
@@ -151,25 +158,25 @@ So when the new researchers have problems, they can start up a workspace, launch
 
 
 
-Slide 18 - share a workspace
+Slide 19 - share a workspace
 
 and share the workspace with other researchers to talk about problems they might be facing.
 
 
 
-Slide 19 - share a workspace
+Slide 20 - share a workspace
 
 This means that they can collaborate within the workspace! And that's a powerful feature because its often easier to show someone a problem, than to try to describe it and have them try to reproduce it.
 
 
 
-Slide 20 - Productivity in the workspace
+Slide 21 - Productivity in the workspace
 
 There are three more features I want to show you quickly and they all have to do with different ways of running applications within the workspace. They are Submit, Pegasus Workflows, and Uncertainty Quanitification. The first one is Submit.
 
 
 
-Slide 21 - Run tools locally
+Slide 22 - Run tools locally
 
 Inside the workspace, users can run programs by using a terminal. The workspaces are pretty powerful by themselves. But sometimes you need more cores or more RAM to run parallel jobs.
 
@@ -177,13 +184,13 @@ Submit allows researchers to easily run their programs on grid computing resourc
 
 
 
-Slide 22 - Submit jobs to othe grid
+Slide 23 - Submit jobs to othe grid
 
 In most cases it is as easy as prepending the word "submit" to your command. This lets the submit program handle sending your job to the supercomputers.
 
 
 
-Slide 23 - Submit workflows
+Slide 24 - Submit workflows
 
 If you run a simulation for one value, you probably want to run it for a few other values to see how the result changes.
 
@@ -193,7 +200,7 @@ In the background, submit creates something called a workflow, and sends 5 jobs 
 
 
 
-Slide 24 - Your own workflow
+Slide 25 - Your own workflow
 
 If you want to, you can even build your own workflow within the Workspaces.
 Remember that cntbands tool we were talking about earlier?
@@ -202,24 +209,24 @@ So we built a version of the tool that used a program called Pegasus to manage i
 
 
 
-Slide 25 - Pegasus Workflow
+Slide 26 - Pegasus Workflow
 
 Speaking of Pegasus, we have it installed inside the workspaces as well.
 
 
-Slide 26 - Pegasus
+Slide 27 - Pegasus
 
 Pegasus is a program that enables researchers to build scientific workflows. It is developed by a team out at USC, funded by an NSF grant. We leverage this tool inside the workspace and it makes developing and debugging scientific workflows easy.
 
 
 
-Slide 27 UQ
+Slide 28 UQ
 
 The workspaces also have tools that allow users to do parameter sensitivity analysis, which is useful in all kinds of scientific computation.
 
 
 
-Slide 28 UQ
+Slide 29 UQ
 If we consider our inputs to a simulation as having a distribution, then the outputs of our simulation will also have a distibution and we can use those distributions to explore the effects of changing a parameter.
 
 For example, we can see how the properties of a material changes.
@@ -228,7 +235,7 @@ Under the hood it uses submit and allows researchers to run hundreds of parallel
 
 
 
-Slide 29 - conclusion
+Slide 30 - conclusion
 
 conclusion
 these are things we already have.
